@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace DecisionMakingBasics
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             var StudNames = new string[] { "John", "Dvid", "Mark", "Peter", "Tim", "Chris", "Anna", "Alice", "Jenifer", "Kathrin" };
             Random rnd_grades = new Random();
             List<Student> StudList = new List<Student>();
@@ -24,7 +19,6 @@ namespace DecisionMakingBasics
                     Maths = rnd_grades.Next(0, 100),
                     Science = rnd_grades.Next(0, 100)
                 });
-
             }
             var PassCount = 0;
             foreach (var stud in StudList)
@@ -74,9 +68,6 @@ namespace DecisionMakingBasics
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-
-
     }
     public class Grades
     {

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ObjectOrientedBasics
 {
     internal class Program
@@ -22,19 +17,16 @@ namespace ObjectOrientedBasics
             gk.EmpId = 1;
             gk.EmpName = "gk";
             gk.DeptId = 2;
-            gk.ShowEmpDetails();
+            gk.ShowEmployeeDetails();
             Console.ReadLine();
         }
     }
-   
-
     public class Company {
         public Company() {
             Console.WriteLine("This is Company constuctor");
         }
         public string Name { get; set; }
         public string OfficeAddress { get; set; }
-        
     }
     public class Department:Company {
         public Department() {
@@ -43,7 +35,6 @@ namespace ObjectOrientedBasics
         public int Id { get; set; }
         public string DeptName { get; set; }
     }
-
     public class Employee : Department {
         public Employee() {
             Console.WriteLine("This is Employee constuctor");
@@ -57,7 +48,7 @@ namespace ObjectOrientedBasics
             this.Salary = 40000;
             return Salary;
         }
-        public void ShowEmpDetails() {
+        public void ShowEmployeeDetails() {
             Console.WriteLine("EmpId :{0},EmpName :{1},DeptId :{2},Salary : {3}", EmpId, EmpName, DeptId, this.GetEmployeeSalary());
         }
     } 
