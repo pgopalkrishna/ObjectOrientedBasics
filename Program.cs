@@ -3,23 +3,25 @@ namespace ObjectOrientedBasics
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("**********Company object*******");
-            Company ix = new Company();
-            Console.WriteLine("*************Department Object************");
-            Department Development = new Department();
-            Console.WriteLine("*************Company object with Employee reference ********");
-            Company ix1 = new Employee();
-            Console.WriteLine("************* Employee Object ***********");
-            Employee gk = new Employee();
-            Console.WriteLine("Employee Salary : "+ gk.GetEmployeeSalary().ToString());
-            gk.EmpId = 1;
-            gk.EmpName = "gk";
-            gk.DeptId = 2;
-            gk.ShowEmployeeDetails();
-            Console.ReadLine();
-        }
+        //Uncomment Main() method to execute 
+
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("**********Company object*******");
+        //    Company ix = new Company();
+        //    Console.WriteLine("*************Department Object************");
+        //    Department Development = new Department();
+        //    Console.WriteLine("*************Company object with Employee reference ********");
+        //    Company ix1 = new Employee();
+        //    Console.WriteLine("************* Employee Object ***********");
+        //    Employee gk = new Employee();
+        //    Console.WriteLine("Employee Salary : "+ gk.GetEmployeeSalary().ToString());
+        //    gk.EmpId = 1;
+        //    gk.EmpName = "gk";
+        //    gk.DeptId = 2;
+        //    gk.ShowEmployeeDetails();
+        //    Console.ReadLine();
+        //}
     }
     public class Company {
         public Company() {
